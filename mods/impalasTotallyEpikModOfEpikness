@@ -1,0 +1,98 @@
+// i dont even know if im doing this right tbh
+
+elements.AllNewChickn = {
+    color: "#ff0000",
+    behavior: behaviors.POWDER,
+    category: "ErmWaterSigma",
+    state: "solid",
+};
+elements.BlockOfEpik = {
+    color: ["#5DE2E7", "#060270"],
+    behavior: behaviors.WALL,
+    category: "ErmWaterSigma",
+    state: "solid",
+    tempHigh: 420420,
+    stateHigh: "AllNewChickn",
+};
+elements.CHAOSCHAOS = {
+    color: ["#860584", "#520051", "#944B93"],
+    behavior: behaviors.BOUNCY,
+    category: "ErmWaterSigma",
+    state: "solid",
+    tempHigh: 10,
+    stateHigh: "BlockOfEpik",
+    temp: -77
+    reactions: {
+        "water": { elem1: null, elem2: "NotSigma" },
+    },
+};
+elements.NotSigma = {
+    color: ["#130653", "#2E1C81"],
+    behavior: behaviors.WALL,
+    category: "ErmWaterSigma",
+    state: "solid",
+    tempLow: -9999,
+    stateLow: "BlockOfEpik",
+};
+elements.birdthingidk = {
+    color: ["#91985B", "#91966A"],
+    behavior: [
+        "M2%1|M2%2|M2%1",
+        "M2%10|XX|M2%10",
+        "XX|M1|XX",
+    ],
+    category: "ErmWaterSigma",
+    state: "solid",
+    reactions: {
+        "water": { elem1: birdthingidk, elem2: "fire" },
+    },
+};
+elements.EternalAbyss = {
+    // behavior taken from cells.js because i have no clue how they work lol
+    name: Eternal Abyss
+    color: ["#0B0B0B", "#292929", "#EBEBEB"],
+    behavior: [
+        "XX|CL%1.8|XX",
+        "CL%1.8|XX|CL%1.8",
+        "M2%5|M1|M2%5",
+    ],
+    category: "ErmWaterSigma",
+    state: "solid",
+    tempLow: -9999,
+    stateLow: "BlockOfEpik",
+    reactions: {
+        "water": { elem1: EternalAbyss, elem2: "EternalAbyss" },
+        "sand": { elem1: EternalAbyss, elem2: "EternalAbyss" },
+        "dirt": { elem1: EternalAbyss, elem2: "EternalAbyss" },
+        "mud": { elem1: EternalAbyss, elem2: "EternalAbyss" },
+        "rock": { elem1: EternalAbyss, elem2: "EternalAbyss" },
+        "snow": { elem1: EternalAbyss, elem2: "EternalAbyss" },
+        "plant": { elem1: EternalAbyss, elem2: "EternalAbyss" },
+        "grass": { elem1: EternalAbyss, elem2: "EternalAbyss" },
+        "algae": { elem1: EternalAbyss, elem2: "EternalAbyss" },
+        "cell": { elem1: EternalAbyss, elem2: "EternalAbyss" },
+        "concrete": { elem1: EternalAbyss, elem2: "EternalAbyss" },
+        "ash": { elem1: EternalAbyss, elem2: "EternalAbyss" },
+        "dust": { elem1: EternalAbyss, elem2: "EternalAbyss" },
+        "wax": { elem1: EternalAbyss, elem2: "EternalAbyss" },
+        "diamond": { elem1: EternalAbyss, elem2: "EternalAbyss" },
+        "ice": { elem1: EternalAbyss, elem2: "EternalAbyss" },
+        "wood": { elem1: EternalAbyss, elem2: "EternalAbyss" },
+        "wall": { elem1: EternalAbyss, elem2: "EternalAbyss" },
+        "glass": { elem1: EternalAbyss, elem2: "EternalAbyss" },
+        "gold": { elem1: EternalAbyss, elem2: "EternalAbyss" },
+        "copper": { elem1: EternalAbyss, elem2: "EternalAbyss" },
+        "fire": { elem1: EternalAbyss, elem2: "EternalAbyss" },
+        "laser": { elem1: EternalAbyss, elem2: "EternalAbyss" },
+        "bomb": { elem1: EternalAbyss, elem2: "EternalAbyss" },
+        "steam": { elem1: EternalAbyss, elem2: "EternalAbyss" },
+        "oxygen": { elem1: EternalAbyss, elem2: "EternalAbyss" },
+        "smoke": { elem1: EternalAbyss, elem2: "EternalAbyss" },
+        "magma": { elem1: EternalAbyss, elem2: "EternalAbyss" },
+        "slime": { elem1: EternalAbyss, elem2: "EternalAbyss" },
+        "oil": { elem1: EternalAbyss, elem2: "EternalAbyss" },
+        "acid": { elem1: EternalAbyss, elem2: "EternalAbyss" },
+        "soda": { elem1: EternalAbyss, elem2: "EternalAbyss" },
+    },
+    breakInto: ["EternalAbyss","EternalAbyss","EternalAbyss","EternalAbyss","cold_fire"]
+};
