@@ -6,5 +6,4 @@ elements.coffeeeeeeee = {
     category: "TestTab",
     viscosity: 27,
     state: "liquid",
-    density: 308
 };
